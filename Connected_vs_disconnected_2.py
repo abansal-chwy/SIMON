@@ -1,3 +1,6 @@
+#to visualize the synchornicity between the repos 
+
+
 import numpy as np
 import scipy.stats as stats
 import pylab as pl
