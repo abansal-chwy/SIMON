@@ -1,3 +1,6 @@
+//This is for developing a markov chain between all the events in the a repo/tag/branch
+
+
 package markov;
 
 import java.io.BufferedReader;
@@ -9,29 +12,11 @@ public class distribution {
 
 	public static void main(String[] args) {
 		try {
-			// just the tester to see how the transition matrix would look like given some
-			// initial events
-			/*
-			 * 1.initialize the arrays 2. loop though the file and increamant the arrays
-			 * counters 3. compute the probabiilties
-			 */
-
-			// read the number of different events in the file
 			int[][] counts = new int[200][2];
-			int[] outDegree = new int[5];
+			
 
 			// build the event , index map as we want them
-			@SuppressWarnings("serial")
-			HashMap<String, Integer> events = new HashMap<String, Integer>() {
-				{
-					put("CreateEvent",0);
-				    put("PushEvent", 1);
-				    put("PullRequestEvent", 2);
-				    put("DeleteEvent", 4);
-				    put("PullRequestReviewCommentEvent",3);
-				}
-			};
-
+			
 			// File file = new File("/Synchronicity/SyncIO/results.txt");
 			File file = new File(distribution.class.getResource("testerSequence.txt").getFile());
 
