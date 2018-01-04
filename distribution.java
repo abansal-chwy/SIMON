@@ -1,4 +1,4 @@
-//This is for developing a markov chain between all the events in the a repo/tag/branch
+//This is a part of  the simulation task to find the probablity of each repo as a past of markov chain between all the events in the a repo/tag/branch.
 
 
 package markov;
